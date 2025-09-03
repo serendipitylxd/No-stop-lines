@@ -49,9 +49,8 @@ Selected supported methods are shown in the below table. The results are the 3D 
 
 |                                             | All test frames | Real violation frame | Precision | Recall | F1-score  | Miss Rate | False Alarm Rate  |
 |---------------------------------------------|----------:|:-------:|:-------:|:-------:|:---------:|:-------:|:-------:|
-| [Part-A2](tools/cfgs/trout_models/PartA2.yaml)    | 8000 | 1351 | 97.78 | 98.95 | 98.36 | 1.05 | 2.22 |
+| Our method   | 8000 | 1351 | 97.78 | 98.95 | 98.36 | 1.05 | 2.22 |
 
-|
 
 ## Installation
 
