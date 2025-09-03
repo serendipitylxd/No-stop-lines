@@ -41,11 +41,8 @@ Main contributions:
 
 ## Model Zoo
 
-### TROUT 3D Object Detection Baselines
-Selected supported methods are shown in the below table. The results are the 3D detection performance  on the ` test`  set of TROUT dataset.
+### No-Stop-Line Detection in Sea Locks Baselines
 * All models are trained with GTX 4080 GPU and are available for download. 
-* The training time is measured with GTX 4080 GPU and PyTorch 1.13.
-* 3D Intersection over Union (IoU) is 0.7.
 
 |                                             | All test frames | Real violation frame | Precision | Recall | F1-score  | Miss Rate | False Alarm Rate  |
 |---------------------------------------------|----------:|:-------:|:-------:|:-------:|:---------:|:-------:|:-------:|
