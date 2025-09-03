@@ -142,7 +142,7 @@ python scripts/run_all.py --cfg configs/config.yaml --no-2d --no-3d --no-check -
 
 
 ## License
-`TROUT` is released under the [Apache 2.0 license](LICENSE).
+`No-stop-lines` is released under the [Apache 2.0 license](LICENSE).
 
 ## Acknowledgement
 
