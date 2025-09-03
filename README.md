@@ -18,7 +18,7 @@ Due to the complex operating environment influenced by **tides, waves, airflow, 
 
 
 ## Changelog
-[2025-01-19] `TROUT` v0.1.0 is released. 
+[2025-09-03] `TROUT` v0.1.0 is released. 
 
 
 ## Introduction
@@ -122,7 +122,7 @@ No-stop-lines
 
 ### How to use TROUT data sets for training and evaluation
 
-Before running the code, you need to open configs/config.yaml,scripts/run_all.py and make relevant modifications according to the environment you have configured.
+Before running the code, you need to open **configs/config.yaml**,**scripts/run_all.py** and make relevant modifications according to the environment you have configured.
 
 Run the full pipeline (2D + 3D detection, fusion, check, evaluation, visualization):
 
