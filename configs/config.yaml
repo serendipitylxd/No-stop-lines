@@ -73,12 +73,12 @@ pcdet_models:
     checkpoint: "/path/to/pcdet_models/config/pointpillar.pth
     score_thr: 0.40
 
-# 语义标签
+# Semantic Tags
 labels:
   lock_gate: "Lock_gate"
   ships: ["Fully_loaded_cargo_ship", "Fully_loaded_container_ship", "Unladen_cargo_ship"]
 
-# 判定几何（单位同点云/闸室坐标）
+# Determination Geometry (no-stop line, area/gate chamber coordinates)
 geometry:
   chamber_x_range: [39.7, 62.7]
   chamber_y_range: [0, 102.4]
@@ -93,7 +93,7 @@ eval:
   pred_gate_presence: outputs/alerts/gate_presence.json
 
 
-# 输出目录
+# Output Directory
 output:
   root: "./outputs"
 
