@@ -1,5 +1,3 @@
-<img src="docs/open_mmlab.png" align="right" width="30%">
-
 # No-Stop-Line Detection in Sea Locks 🚢
 
 This project focuses on **intelligent detection of no-stop lines in ship locks**, ensuring navigation safety in inland waterways. 
