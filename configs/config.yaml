@@ -1,0 +1,95 @@
+# Basic Data Path
+data:
+  images_dir: "path/to/coco_TROUT/test2017"          # Test Set Image Directory (for 2D)
+  points_dir: "path/to/TROUT/points_test"          # Test set point cloud directory (.bin/.npy/.pcd) (for 3D)
+  frame_id_regex: "^(.*)\\.(jpg|png|jpeg|bin|npy|pcd)$"   # The frame_id is made by removing the suffix from the file name
+
+# 2D Model (Multiple can be configured, gate existence uses OR)
+mmdet_models:
+  - name: "atss"
+    config: "path/to/config/atss_r50_fpn_1x_coco.py"
+    checkpoint: "path/to/checkpoint/atss.pth"
+    score_thr: 0.40
+
+  - name: "convnext"
+    config: "path/to/config/cascade-mask-rcnn_convnext-t-p4-w7_fpn_4conv1fc-giou_amp-ms-crop-3x_coco.py"
+    checkpoint: "path/to/checkpoint/convnext.pth"
+    score_thr: 0.40
+    
+  - name: "dab-detr"
+    config: "path/to/config/dab-detr_r50_8xb2-50e_coco.py"
+    checkpoint: "path/to/checkpoint/dab-detr.pth"
+    score_thr: 0.40
+
+  - name: "ddq"
+    config: "path/to/config/ddq-detr-4scale_r50_8xb2-12e_coco.py"
+    checkpoint: "path/to/checkpoint/ddq.pth"
+    score_thr: 0.40
+
+  - name: "dino"
+    config: "path/to/config/dino-4scale_r50_8xb2-12e_coco.py"
+    checkpoint: "path/to/checkpoint/dino.pth"
+    score_thr: 0.40
+    
+
+  - name: "yolox"
+    config: "/path/to/yolox_s_8xb8-300e_coco.py"
+    checkpoint: "/path/to/checkpoint/yolox.pth"
+    score_thr: 0.40
+
+# 3D Model (Multiple can be provided, ship frame merge output; if gate includes this type, it also participates in OR)
+pcdet_models:
+  - name: "pointpillar"
+    config: "/path/to/pcdet_models/config/pointpillar.yaml"
+    checkpoint: "/path/to/pcdet_models/checkpoint/pointpillar.pth"
+    score_thr: 0.40
+
+  - name: "second"
+    config: "/path/to/pcdet_models/config/second.yaml"
+    checkpoint: "/path/to/pcdet_models/checkpoint/second.pth"
+    score_thr: 0.40
+
+  - name: "dsvt_voxel"
+    config: "/path/to/pcdet_models/config/dsvt_voxel.yaml"
+    checkpoint: "/path/to/pcdet_models/checkpoint/dsvt_voxel.pth"
+    score_thr: 0.40
+
+  - name: "voxel_mamba"
+    config: "/path/to/pcdet_models/config/voxel_mamba.yaml"
+    checkpoint: "/path/to/pcdet_models/checkpoint/voxel_mamba.pth"
+    score_thr: 0.40
+
+  - name: "pv_rcnn"
+    config: "/path/to/pcdet_models/config/pv_rcnn.yaml"
+    checkpoint: "/path/to/pcdet_models/checkpoint/pv_rcnn.pth"
+    score_thr: 0.40
+
+  - name: "pv_rcnn_plusplus"
+    config: "/path/to/pcdet_models/config/pv_rcnn_plusplus.yaml"
+    checkpoint: "/path/to/pcdet_models/checkpoint/pv_rcnn_plusplus.pth"
+    score_thr: 0.40
+
+# Semantic Tags
+labels:
+  lock_gate: "Lock_gate"
+  ships: ["Fully_loaded_cargo_ship", "Fully_loaded_container_ship", "Unladen_cargo_ship"]
+
+# Determination Geometry (no-stop line, area/gate chamber coordinates)
+geometry:
+  chamber_x_range: [39.7, 62.7]
+  chamber_y_range: [0, 102.4]
+  gate_y_range: [19.078, 23.002]
+  stop_line_y: 48.002
+  no_stop_y_range: [23.002, 48.002]
+
+
+eval:
+  kitti_gt_dir: trout_test_label
+  pred_alerts: outputs/alerts/alerts_by_frame.json
+  pred_gate_presence: outputs/alerts/gate_presence.json
+
+
+# Output Directory
+output:
+  root: "./outputs"
+
