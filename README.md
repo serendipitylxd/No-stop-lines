@@ -18,7 +18,7 @@ Due to the complex operating environment influenced by **tides, waves, airflow, 
 
 
 ## Changelog
-[2025-09-03] `TROUT` v0.1.0 is released. 
+[2025-09-03] `No-stop-line` v0.1.0 is released. 
 
 
 ## Introduction
