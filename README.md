@@ -46,7 +46,7 @@ Main contributions:
 
 |                                             | All test frames | Real violation frame | Precision | Recall | F1-score  | Miss Rate | False Alarm Rate  |
 |---------------------------------------------|----------:|:-------:|:-------:|:-------:|:---------:|:-------:|:-------:|
-| Our method   | 8000 | 1351 | 97.78 | 98.95 | 98.36 | 1.05 | 2.22 |
+| Our method   | 8000 | 1337 | 98.00 | 98.95 | 98.47 | 1.05 | 2.00 |
 
 
 ## Installation

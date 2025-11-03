@@ -3,6 +3,7 @@ data:
   images_dir: "path/to/coco_TROUT/test2017"          # Test Set Image Directory (for 2D)
   points_dir: "path/to/TROUT/points_test"          # Test set point cloud directory (.bin/.npy/.pcd) (for 3D)
   frame_id_regex: "^(.*)\\.(jpg|png|jpeg|bin|npy|pcd)$"   # The frame_id is made by removing the suffix from the file name
+  ts_file: "path/to/add_info_testing/add_info_testing.txt"   # Frame Number timestamp File path
 
 # 2D Model (Multiple can be configured, gate existence uses OR)
 mmdet_models:
@@ -31,7 +32,6 @@ mmdet_models:
     checkpoint: "path/to/checkpoint/dino.pth"
     score_thr: 0.40
     
-
   - name: "yolox"
     config: "/path/to/yolox_s_8xb8-300e_coco.py"
     checkpoint: "/path/to/checkpoint/yolox.pth"
