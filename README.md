@@ -139,11 +139,15 @@ If you find this project useful in your research, please consider cite:
 
 
 ```
-@misc{no-stop-line2025,
-    title={Multi-Modal Backend Fusion for Intelligent No-Stop Line Violation Detection in Sea-Connected Locks},
-    author={Xiaodong Lu, Weikai Tan,Kaofan Liu, Xinyue Luo,Sudong Xu},
-    howpublished = {\url{https://github.com/serendipitylxd/No-stop-lines}},
-    year={2025}
+@article{LU2026120018,
+title = {Multi-modal backend fusion for intelligent no-stop line violation detection in sea-connected locks},
+journal = {Measurement},
+volume = {261},
+pages = {120018},
+year = {2026},
+issn = {0263-2241},
+doi = {https://doi.org/10.1016/j.measurement.2025.120018},
+author = {Xiaodong Lu and Sudong Xu and Shishuang Wu}
 }
 ```
 
